@@ -1,0 +1,7 @@
+{
+  "name": "cine-sales",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
