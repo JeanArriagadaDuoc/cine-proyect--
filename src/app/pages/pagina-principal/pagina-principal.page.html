@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CINEMAK</ion-title>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon  slot="icon-only" name="person-circle"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+  </ion-toolbar>
+  <ion-searchbar></ion-searchbar> 
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cartelera de Películas</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-grid>
+    <ion-row>
+        <!-- Pelicula 1 -->    
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <img class="center-image" alt="Imagen de la película" src="assets/imgs/opnheimer.jpg" />
+          <ion-card-header>
+            <ion-card-title>Oppenheimer</ion-card-title>
+            <ion-card-subtitle>Edad mínima: 16+</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Una historia biográfica sobre J. Robert Oppenheimer y la creación de la bomba atómica.</p>
+            <ion-button expand="full">Comprar Asiento</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    <!-- Pelicula 2 -->    
+    <ion-col size="12" size-md="6" size-lg="4">
+      <ion-card>
+        <img class="center-image" alt="Imagen de la película" src="assets/imgs/avatar.jpg" />
+        <ion-card-header>
+          <ion-card-title>Avatar</ion-card-title>
+          <ion-card-subtitle>Edad mínima: 13+</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Jake Sully y Neytiri protegen a su familia en Pandora.</p>
+          <ion-button expand="full">Comprar Asiento</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <!-- Pelicula 3 -->    
+
+    <ion-col size="12" size-md="6" size-lg="4">
+      <ion-card>
+        <img class="center-image" alt="Imagen de la película" src="assets/imgs/spiuderman.jpg" />
+        <ion-card-header>
+          <ion-card-title>Spider-Man: No Way Home</ion-card-title>
+          <ion-card-subtitle>Edad mínima: 13+</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Peter Parker enfrenta las consecuencias de su identidad revelada.</p>
+          <ion-button expand="full">Comprar Asiento</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <!-- Pelicula 4-->    
+    <ion-col size="12" size-md="6" size-lg="4">
+      <ion-card>
+        <img class="center-image" alt="Imagen de la película" src="assets/imgs/titanic.jpg" />
+        <ion-card-header>
+          <ion-card-title>Titanic</ion-card-title>
+          <ion-card-subtitle>Edad mínima: 12+</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Una historia de amor a bordo del Titanic.</p>
+          <ion-button expand="full">Comprar Asiento</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>
+

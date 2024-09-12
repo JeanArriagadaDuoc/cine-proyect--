@@ -1,0 +1,19 @@
+ion-card {
+    margin: 10px;
+  }
+  ion-card-title {
+    font-weight: bold;
+  }
+  
+  ion-card-content {
+    padding: 10px;
+  }
+
+
+  .center-image {
+    display: block;       /* Asegura que la imagen sea un bloque */
+    margin: 0 auto;       /* Centra horizontalmente */
+    max-width: 100%;      /* Ajusta la imagen al tamaño del contenedor sin desbordarlo */
+    height: auto;         /* Mantiene la proporción de la imagen */
+  }
+  

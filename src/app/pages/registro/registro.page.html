@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CINEMAK</ion-title>
+    <h1>Bienvenido</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Completa tu info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="nombre" label="Nombre" labelPlacement="floating"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="apellido" label="Apellido" labelPlacement="floating"></ion-input>
+    </ion-item>
+
+    <h5>Fecha Nacimiento: </h5>
+    <ion-item>
+      <ion-datetime [(ngModel)]="fechaNacimiento" display-format="DD/MM/YYYY" label="Fecha de Nacimiento" labelPlacement="floating"></ion-datetime>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-button expand="block" 
+  (click)="register()" [disabled]="!nombre || !apellido  || !fechaNacimiento ">
+    Registrarse
+  </ion-button>
+
+  <div class="ion-text-center">
+    <a class="a-link"[routerLink]="['/pagina-principal']">Quieres ir a la pagina principal?</a>
+  </div>
+</ion-content>
+
